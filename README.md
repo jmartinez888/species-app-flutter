@@ -6,15 +6,14 @@ Aplicación móvil desarrollada en Flutter para la visualización de especies.
 
 - [Species flutter app](#species-flutter-app)
   - [Tabla de contenidos](#tabla-de-contenidos)
+  - [Clean Architecture](#clean-architecture)
   - [Arquitectura de la aplicación](#arquitectura-de-la-aplicación)
-    - [Clean Architecture](#clean-architecture)
     - [Imagen de la estructura de la aplicación](#imagen-de-la-estructura-de-la-aplicación)
     - [Descripción de las carpetas y archivos](#descripción-de-las-carpetas-y-archivos)
 
 
-## Arquitectura de la aplicación
 
-### Clean Architecture
+## Clean Architecture
 
 La arquitectura de la aplicación es Clean Architecture, la cual se divide en tres capas:
 
@@ -24,6 +23,7 @@ La arquitectura de la aplicación es Clean Architecture, la cual se divide en tr
 
 - **Capa de presentación**: Contiene la lógica de presentación de la aplicación, como pantallas, widgets y lógica de presentación.
 
+## Arquitectura de la aplicación
 ### Imagen de la estructura de la aplicación
 ![Estructura de la aplicación](./assets/images/estructura.png)
 
