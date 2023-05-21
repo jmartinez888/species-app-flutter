@@ -30,7 +30,7 @@ La arquitectura de la aplicación es Clean Architecture, la cual se divide en tr
 
 ### Descripción de las carpetas y archivos
 
-- **Carpeta "src"**: Contiene el código fuente de la aplicación.
+- 📁 **Carpeta "src"**: Contiene el código fuente de la aplicación.
 
   - **Carpeta "data"**: Aquí se encuentra la capa de datos de la aplicación.
   - **Carpeta "domain"**: Aquí se encuentra la capa de dominio de la aplicación.
