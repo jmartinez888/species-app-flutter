@@ -42,6 +42,9 @@ La arquitectura de la aplicación es Clean Architecture, la cual se divide en tr
   - Esta carpeta contiene los archivos relacionados con la capa de datos de la aplicación, como repositorios, fuentes de datos y modelos de datos:
     - 💼 `repositories_implementation`: Contiene las implementaciones de los repositorios de la aplicación.
     - ⛽ `services`: Contiene los servicios de la aplicación.
+        - 📁 `devices`: Contiene los servicios relacionados con el dispositivo.
+        - 📁 `local`: Contiene los servicios relacionados con el cosumo local de datos (json, text, etc).
+        - 📁 `remote`: Contiene los servicios relacionados con el cosumo remoto de datos (API's, Firebase, etc).
 
 - 📁 **Carpeta "src/domain"**:
 
