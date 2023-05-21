@@ -1,27 +1,35 @@
 # Species flutter app
 
+- [Species flutter app](#species-flutter-app)
+  - [Arquitectura de la aplicación](#arquitectura-de-la-aplicación)
+    - [Clean Architecture](#clean-architecture)
+    - [Imagen de la estructura de la aplicación](#imagen-de-la-estructura-de-la-aplicación)
+    - [Descripción de las carpetas y archivos](#descripción-de-las-carpetas-y-archivos)
+
+
 ## Arquitectura de la aplicación
 
 ### Clean Architecture
 
 La arquitectura de la aplicación es Clean Architecture, la cual se divide en tres capas:
 
-- Capa de datos: Contiene la lógica de acceso a datos de la aplicación, como repositorios, fuentes de datos y modelos de datos.
+- **Capa de datos**: Contiene la lógica de acceso a datos de la aplicación, como repositorios, fuentes de datos y modelos de datos.
 
-- Capa de dominio: Contiene la lógica de negocio de la aplicación, como entidades y casos de uso.
+- **Capa de dominio**: Contiene la lógica de negocio de la aplicación, como entidades y casos de uso.
 
-- Capa de presentación: Contiene la lógica de presentación de la aplicación, como pantallas, widgets y lógica de presentación.
+- **Capa de presentación**: Contiene la lógica de presentación de la aplicación, como pantallas, widgets y lógica de presentación.
 
 ### Imagen de la estructura de la aplicación
-<!-- imagen -->
-![Estructura de la aplicación](./assets/images/structure.png)
+![Estructura de la aplicación](./assets/images/estructura.png)
 
 
-- Carpeta "src": Contiene el código fuente de la aplicación.
+### Descripción de las carpetas y archivos
 
-  - Carpeta "data": Aquí se encuentra la capa de datos de la aplicación.
-  - Carpeta "domain": Aquí se encuentra la capa de dominio de la aplicación.
-  - Carpeta "presentation": Aquí se encuentra la capa de presentación de la aplicación.
+- **Carpeta "src"**: Contiene el código fuente de la aplicación.
+
+  - **Carpeta "data"**: Aquí se encuentra la capa de datos de la aplicación.
+  - **Carpeta "domain"**: Aquí se encuentra la capa de dominio de la aplicación.
+  - **Carpeta "presentation"**: Aquí se encuentra la capa de presentación de la aplicación.
 
 - Carpeta "src/data":
 
