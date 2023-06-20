@@ -1,11 +1,5 @@
 // Material
 import 'package:flutter/material.dart';
-// Colors
-import 'package:species/src/presentation/global/colors/colors.dart';
-// Widgets
-import 'package:species/src/presentation/global/widgets/buttons/custom_button.dart';
-// Routes
-import 'package:species/src/presentation/routes/routes_config.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

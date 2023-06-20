@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/colors/colors.dart';
 
 class FaunaPage extends StatelessWidget {
   const FaunaPage({super.key});
