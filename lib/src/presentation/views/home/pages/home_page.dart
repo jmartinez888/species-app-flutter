@@ -9,27 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),
-        leading: Icon(Icons.home_filled),
       ),
-      body: ListView(
-        children: [
-          FloatingActionButton(
-            onPressed: () {},
-            child: Icon(Icons.add),
-          ),
-          Icon(Icons.home_filled),
-          Text('ABC'),
-          OutlinedButton(onPressed: () {}, child: Text('as')),
-          FilledButton(onPressed: () {}, child: Text('data')),
-          TextField(
-            
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.home_filled),
-          ),
-        ],
-      ),
-    );
+      body: const Center(child: Text('Hola')));
   }
 }
