@@ -15,31 +15,26 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),
-        backgroundColor: primaryColor,
+        leading: Icon(Icons.home_filled),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Home page',
-                style: TextStyle(
-                  fontSize: 24,
-                ),
-              ),
-              customButton(
-                context: context,
-                text: 'Flora',
-                buttonColor: secondaryColor,
-                onPressed: () {
-                  Navigator.pushNamed(context, Routes.fauna);
-                },
-              ),
-            ],
+      body: ListView(
+        children: [
+          FloatingActionButton(
+            onPressed: () {},
+            child: Icon(Icons.add),
           ),
-        ),
+          Icon(Icons.home_filled),
+          Text('ABC'),
+          OutlinedButton(onPressed: () {}, child: Text('as')),
+          FilledButton(onPressed: () {}, child: Text('data')),
+          TextField(
+            
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.home_filled),
+          ),
+        ],
       ),
     );
   }

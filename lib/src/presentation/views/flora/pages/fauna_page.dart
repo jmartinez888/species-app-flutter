@@ -9,7 +9,6 @@ class FaunaPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Fauna'),
-        backgroundColor: primaryColor,
       ),
       body: const Center(
         child: Text(

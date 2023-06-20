@@ -6,12 +6,10 @@ Widget customButton({
   String text = '',
   Function()? func,
   onPressed,
-  Color buttonColor = secondaryColor,
 }) {
   return ElevatedButton(
     onPressed: onPressed,
     style: ElevatedButton.styleFrom(
-      backgroundColor: buttonColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
@@ -19,7 +17,6 @@ Widget customButton({
     child: Text(
       text,
       style: const TextStyle(
-        color: whiteColor,
       ),
     ),
   );
