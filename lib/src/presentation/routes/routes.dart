@@ -6,7 +6,7 @@ import 'package:species/src/presentation/routes/routes_config.dart';
 
 Map<String, Widget Function(BuildContext context)> get routes {
   return {
-    Routes.home: (context) => const HomePage(),
+    Routes.home: (context) => HomePage(),
     Routes.fauna: (context) => const FaunaPage(),
     Routes.flora: (context) => const FloraPage(),
   };
