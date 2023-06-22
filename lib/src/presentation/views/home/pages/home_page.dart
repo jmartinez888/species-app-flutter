@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Tab> tabs = [
+    const List<Tab> tabs = [
       Tab(text: 'Tab 1'),
       Tab(text: 'Tab 2'),
       Tab(text: 'Tab 3'),
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
             centerTitle: false,
             title: 'Especies',
             tabBar: tabs.isNotEmpty
-                ? TabBar(
+                ? const TabBar(
                     tabs: tabs,
                   )
                 : null,
