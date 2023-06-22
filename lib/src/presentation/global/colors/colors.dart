@@ -1,29 +1,55 @@
 import 'package:flutter/material.dart';
 
-// main colors
-const primaryColor = Color.fromRGBO(2, 103, 1, 1);
-const secondaryColor = Color.fromRGBO(0, 145, 190, 1);
-const tertiaryColor = Color.fromRGBO(231, 127, 28, 1);
+class CustomColors {
+  CustomColors._();
 
-const whiteColor = Colors.white;
+  static const primary = Color(0xFF348A29);
+  static const primaryContainer = Color(0xFFE8F5E9);
+  static const primaryOnContainer = Color(0xFF165C0F);
 
-// text colors
-const lightTextColor = Color(0xFF000000);
+  static const secondary = Color(0xFFEC7F00);
+  static const secondaryContainer = Color(0xFFF9E0B7);
+  static const secondaryOnContainer = Color(0xFFDE5700);
 
-// background colors
-const lightBackgroundColor = Color(0xFFF4F4ED);
+  static const tertiary = Color(0xFF00A3D7);
+  static const tertiaryContainer = Color(0xFFE3F2FD);
+  static const tertiaryOnContainer = Color(0xFF003259);
 
-// border colors
+  static const error = Color(0xFFF44336);
+  static const errorContainer = Color(0xFFFFCDD2);
+  static const errorOnContainer = Color(0xFFB71C1C);
 
-// shadow colors
+  static const grey = Color(0xFF424242);
+  static const greyContainer = Color(0xFFBDBDBD);
+  static const greyOnContainer = Color(0xFF212121);
 
-// tabbar colors
-const unselectedTabbarLabelColor = Color(0x43483F00);
+  static const bird = Color(0xFF212121);
+  static const birdContainer = Color(0xFFFFF3E0);
+  static const birdOnContainer = Color(0xFF7F0000);
 
-// card colors
-const lightCardColor = lightBackgroundColor;
-const lightCardBorderColor = Color(0xC3C8BC00);
+  static const mammal = Color(0xFF886D5B);
+  static const mammalContainer = Color(0xFFEFEBE9);
+  static const mammalOnContainer = Color(0xFF3B251B);
 
-// bottom navigation bar colors
-const lightBottomNavigationBarColor = Color(0xEEEEE800);
-const lightBottomNavigationBarSelectedItemColor = Color(0xFFDCC400);
+  static const reptile = Color(0xFF0E69A8);
+  static const reptileContainer = Color(0xFFE3F2FD);
+  static const reptileOnContainer = Color(0xFF002E5E);
+
+  static const insect = Color(0xFFE3B409);
+  static const insectContainer = Color(0xFFFFFDE7);
+  static const insectOnContainer = Color(0xFFE88800);
+
+  static const tree = Color(0xFF4CB848);
+  static const treeContainer = Color(0xFFE8F5E9);
+  static const treeOnContainer = Color(0xFF005C00);
+
+  static const palm = Color(0xFF8C62AA);
+  static const palmContainer = Color(0xFFEDE7F6);
+  static const palmOnContainer = Color(0xFF603F85);
+
+  static const black = Color(0xFF000000);
+  static const white = Color(0xFFFFFFFF);
+  static const whiteOpacity = Color(0xBBFFFFFF);
+
+  static const background = Color(0xFFFAFAFA);
+}

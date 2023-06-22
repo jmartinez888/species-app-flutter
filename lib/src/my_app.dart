@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/theme/theme.dart';
+import 'package:species/src/presentation/global/themes/light_theme.dart';
 import 'package:species/src/presentation/routes/routes.dart';
 import 'package:species/src/presentation/routes/routes_config.dart';
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: lighTheme(context: context),
+      theme: CustomTheme.lightTheme,
       routes: routes,
       initialRoute: Routes.home,
     );

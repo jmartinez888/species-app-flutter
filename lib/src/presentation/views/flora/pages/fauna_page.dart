@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/colors/colors.dart';
 
 class FaunaPage extends StatelessWidget {
   const FaunaPage({super.key});
@@ -9,7 +8,6 @@ class FaunaPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Fauna'),
-        backgroundColor: primaryColor,
       ),
       body: const Center(
         child: Text(
