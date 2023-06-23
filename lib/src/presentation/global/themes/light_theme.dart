@@ -29,6 +29,7 @@ class CustomTheme {
       surface: CustomColors.background,
       onSurface: CustomColors.greyOnContainer,
       outline: CustomColors.greyContainer,
+      onSurfaceVariant: CustomColors.grey,
     ),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
