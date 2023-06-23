@@ -15,7 +15,13 @@ class _LoginPageState extends State<LoginPage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _scrollController.jumpTo(_scrollController.position.maxScrollExtent);
+      Future.delayed(const Duration(milliseconds: 2500)).then(
+        (value) => _scrollController.animateTo(
+          _scrollController.position.maxScrollExtent,
+          curve: Curves.easeInOut,
+          duration: const Duration(milliseconds: 400),
+        ),
+      );
     });
   }
 
