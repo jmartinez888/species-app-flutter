@@ -11,27 +11,6 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Species'),
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.red,
-              ),
-              child: Text('Drawer Header'),
-            ),
-            ListTile(
-              title: const Text('Item 1'),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Text('Item 2'),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
       body: MasonryGridView.builder(
         padding: const EdgeInsets.all(8.0),
         itemCount: 6,
