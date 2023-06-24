@@ -22,11 +22,11 @@ class HomePage extends StatelessWidget {
         itemBuilder: (context, index) => SpeciesCard(
           titleCard: 'Pato Crestudo',
           subtitleCard: 'Sarkidiornis sylvicola',
-          cardColor: Theme.of(context).cardColor,
-          borderSideColor: Theme.of(context).primaryColor,
-          ratingStarscolor: Theme.of(context).primaryColor,
-          preferenciesButtonsColor: Theme.of(context).primaryColor,
-          iconColorCard: Colors.white,
+          cardColor: Theme.of(context).colorScheme.primaryContainer,
+          borderSideColor: Theme.of(context).colorScheme.primary,
+          ratingStarscolor: Theme.of(context).colorScheme.primary,
+          preferenciesButtonsColor: Theme.of(context).colorScheme.primary,
+          iconColorCard: Theme.of(context).colorScheme.primaryContainer,
         ),
       ),
     );
