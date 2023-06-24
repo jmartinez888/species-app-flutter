@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import '../colors/colors.dart';
 
 class CustomTheme {
-
   CustomTheme._();
-  
+
   static ThemeData lightTheme = ThemeData(
     //colorSchemeSeed: Colors.green,
     colorScheme: const ColorScheme(
@@ -40,6 +39,11 @@ class CustomTheme {
     appBarTheme: const AppBarTheme(
       color: CustomColors.background,
       foregroundColor: CustomColors.greyOnContainer,
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(16.0),
+      ),
     ),
     useMaterial3: true,
   );
