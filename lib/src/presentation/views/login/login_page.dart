@@ -36,6 +36,7 @@ class _LoginPageState extends State<LoginPage> with FormMixing {
   void dispose() {
     _scrollController.dispose();
     _emailController.dispose();
+    _passwordController.dispose();
     super.dispose();
   }
 
