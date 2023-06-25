@@ -9,7 +9,7 @@ class LoginPage extends StatefulWidget {
   State<LoginPage> createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> with FormMixing {
+class _LoginPageState extends State<LoginPage> with FormMixin {
   final ScrollController _scrollController = ScrollController();
   final TextEditingController _emailController = TextEditingController(),
       _passwordController = TextEditingController();
