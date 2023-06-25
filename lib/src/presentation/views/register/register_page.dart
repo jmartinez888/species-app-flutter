@@ -100,7 +100,7 @@ class _RegisterPageState extends State<RegisterPage> with FormMixin {
               obscureText: _hidePassword,
               decoration: InputDecoration(
                 labelText: 'Contraseña',
-                prefixIcon: const Icon(Icons.password_rounded),
+                prefixIcon: const Icon(Icons.password_rounded), 
                 suffixIcon: Wrap(
                   runSpacing: 8.0,
                   children: [
