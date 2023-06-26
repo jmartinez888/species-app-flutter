@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:species/src/presentation/global/mixins/form_mixin.dart';
+import 'package:species/src/presentation/global/widgets/cards/custom_list_tile.dart';
+import 'package:species/src/presentation/global/widgets/drawer/custom_drawer.dart';
+import '../../global/icons/custom_icons.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -100,7 +103,7 @@ class _RegisterPageState extends State<RegisterPage> with FormMixin {
               obscureText: _hidePassword,
               decoration: InputDecoration(
                 labelText: 'Contraseña',
-                prefixIcon: const Icon(Icons.password_rounded), 
+                prefixIcon: const Icon(Icons.password_rounded),
                 suffixIcon: Wrap(
                   runSpacing: 8.0,
                   children: [

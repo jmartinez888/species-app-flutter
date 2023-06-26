@@ -36,10 +36,14 @@ class CustomTheme {
       backgroundColor: CustomColors.primary,
       foregroundColor: CustomColors.white,
     ),
+    drawerTheme: const DrawerThemeData(
+      backgroundColor: CustomColors.background,
+      surfaceTintColor: CustomColors.background,
+    ),
     iconTheme: const IconThemeData(color: CustomColors.greyOnContainer),
     appBarTheme: const AppBarTheme(
-      color: CustomColors.background,
       foregroundColor: CustomColors.greyOnContainer,
+      surfaceTintColor: Colors.transparent,
     ),
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(
