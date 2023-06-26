@@ -20,6 +20,8 @@ class HomePage extends StatelessWidget {
           crossAxisCount: 2,
         ),
         itemBuilder: (context, index) => SpeciesCard(
+          // imagePlaceholder: 'assets/images/estructura.png',
+          // imageUrl: 'https://picsum.photos/seed/picsum/300/400',
           titleCard: 'Pato Crestudo',
           subtitleCard: 'Sarkidiornis sylvicola',
           cardColor: Theme.of(context).colorScheme.primaryContainer,
