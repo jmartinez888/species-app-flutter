@@ -18,9 +18,10 @@ class CustomIconButtom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Container(
+          height: 40.0,
+          width: 40.0,
           decoration:
               BoxDecoration(color: backgroundColor, shape: BoxShape.circle),
           child: IconButton(
@@ -28,6 +29,7 @@ class CustomIconButtom extends StatelessWidget {
             icon: Icon(
               icon,
               color: iconColor,
+              size: 24.0,
             ),
           ),
         ),
