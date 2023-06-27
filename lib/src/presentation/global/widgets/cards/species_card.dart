@@ -1,7 +1,4 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/widgets/icon_buttons.dart';
 import 'package:species/src/presentation/global/widgets/rating_starts.dart';
 
 class SpeciesCard extends StatelessWidget {
@@ -16,7 +13,6 @@ class SpeciesCard extends StatelessWidget {
     this.iconColorCard,
     this.imagePlaceholder,
     this.imageUrl,
-    this.hasImage,
   });
 
   final Color? cardColor;
@@ -28,7 +24,6 @@ class SpeciesCard extends StatelessWidget {
   final Color? iconColorCard;
   final String? imagePlaceholder;
   final String? imageUrl;
-  final Bool? hasImage;
 
   @override
   Widget build(BuildContext context) {
@@ -51,10 +46,7 @@ class SpeciesCard extends StatelessWidget {
         onTap: () {},
         child: Column(
           children: [
-            hasImage != null
-                ? _cardImage(
-                    imagePlaceholder: imagePlaceholder, imageUrl: imageUrl)
-                : _noImageCard(),
+            _cardImage(imagePlaceholder: imagePlaceholder, imageUrl: imageUrl),
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -84,11 +76,6 @@ class SpeciesCard extends StatelessWidget {
                   RatingStars(
                     color: ratingStarscolor,
                   ),
-                  const SizedBox(height: 8),
-                  PreferenciesButtons(
-                    color: preferenciesButtonsColor,
-                    iconColor: iconColorCard,
-                  ),
                 ],
               ),
             ),
@@ -97,23 +84,6 @@ class SpeciesCard extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget _noImageCard() {
-  return Container(
-    height: 200,
-    color: Colors.grey[300],
-    child: Center(
-      child: Text(
-        'No image',
-        style: TextStyle(
-          color: Colors.grey[600],
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-        ),
-      ),
-    ),
-  );
 }
 
 Widget _cardImage({

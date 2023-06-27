@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/widgets/cards/species_card.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:species/src/presentation/global/colors/colors.dart';
+import 'package:species/src/presentation/global/widgets/custom_icon_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,28 +9,17 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Species'),
+        title: const Text('Home'),
+        actions: [
+          CustomIconButtom(
+            backgroundColor: CustomColors.bird,
+            iconColor: CustomColors.birdContainer,
+            icon: Icons.add,
+            onPressed: () {},
+          )
+        ],
       ),
-      body: MasonryGridView.builder(
-        padding: const EdgeInsets.all(8.0),
-        itemCount: 6,
-        mainAxisSpacing: 8.0,
-        crossAxisSpacing: 8.0,
-        gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-        ),
-        itemBuilder: (context, index) => SpeciesCard(
-          // imagePlaceholder: 'assets/images/estructura.png',
-          // imageUrl: 'https://picsum.photos/seed/picsum/300/400',
-          titleCard: 'Pato Crestudo',
-          subtitleCard: 'Sarkidiornis sylvicola',
-          cardColor: Theme.of(context).colorScheme.primaryContainer,
-          borderSideColor: Theme.of(context).colorScheme.primary,
-          ratingStarscolor: Theme.of(context).colorScheme.primary,
-          preferenciesButtonsColor: Theme.of(context).colorScheme.primary,
-          iconColorCard: Theme.of(context).colorScheme.primaryContainer,
-        ),
-      ),
+      body: const Center(),
     );
   }
 }

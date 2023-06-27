@@ -23,7 +23,7 @@ class CustomColors {
   static const greyContainer = Color(0xFFBDBDBD);
   static const greyOnContainer = Color(0xFF212121);
 
-  static const bird = Color(0xFF212121);
+  static const bird = Color(0xFFF36A2A);
   static const birdContainer = Color(0xFFFFF3E0);
   static const birdOnContainer = Color(0xFF7F0000);
 
