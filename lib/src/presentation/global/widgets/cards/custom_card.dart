@@ -11,6 +11,7 @@ class CustomItemCard extends StatelessWidget {
     required this.actions,
     required this.backgroundCardColor,
     required this.borderCardColor,
+    this.onTap,
   });
 
   final String image;
@@ -20,6 +21,7 @@ class CustomItemCard extends StatelessWidget {
   final List<Widget> actions;
   final Color backgroundCardColor;
   final Color borderCardColor;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class CustomItemCard extends StatelessWidget {
         side: BorderSide(color: borderCardColor, width: 1.0),
       ),
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         borderRadius: const BorderRadius.all(Radius.circular(16.0)),
         child: Column(
           children: [

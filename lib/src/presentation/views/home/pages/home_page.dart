@@ -35,6 +35,7 @@ class HomePage extends StatelessWidget {
             scientificName: 'Nombre científico',
             backgroundCardColor: CustomColors.birdContainer,
             borderCardColor: CustomColors.bird,
+            onTap: () {},
             ratingStars: const [
               Wrap(
                 spacing: 4.0,
