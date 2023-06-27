@@ -29,16 +29,21 @@ class CustomTheme {
       surface: CustomColors.background,
       onSurface: CustomColors.greyOnContainer,
       outline: CustomColors.greyContainer,
+      onSurfaceVariant: CustomColors.grey,
     ),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: CustomColors.primary,
       foregroundColor: CustomColors.white,
     ),
+    drawerTheme: const DrawerThemeData(
+      backgroundColor: CustomColors.background,
+      surfaceTintColor: CustomColors.background,
+    ),
     iconTheme: const IconThemeData(color: CustomColors.greyOnContainer),
     appBarTheme: const AppBarTheme(
-      color: CustomColors.background,
       foregroundColor: CustomColors.greyOnContainer,
+      surfaceTintColor: Colors.transparent,
     ),
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(
