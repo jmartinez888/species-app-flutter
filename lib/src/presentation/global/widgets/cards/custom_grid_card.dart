@@ -8,18 +8,16 @@ class CustomGridCard extends StatelessWidget {
     this.subtitle,
     this.actions = const <Widget>[],
     this.backgroundColor,
-    this.borderColor,
-    this.titleColor,
+    this.principalColor,
     required this.image,
   }) : super(key: key);
 
   final Widget image;
   final String? title;
-  final Color? titleColor;
+  final Color? principalColor;
   final String? subtitle;
   final List<Widget>? actions;
   final Color? backgroundColor;
-  final Color? borderColor;
   final void Function()? onTap;
 
   @override
@@ -29,7 +27,7 @@ class CustomGridCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: const BorderRadius.all(Radius.circular(16.0)),
         side: BorderSide(
-          color: borderColor ?? Theme.of(context).colorScheme.outline,
+          color: principalColor ?? Theme.of(context).colorScheme.outline,
           width: 1.0,
         ),
       ),
@@ -58,7 +56,7 @@ class CustomGridCard extends StatelessWidget {
                     Text(
                       title!,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                            color: titleColor ??
+                            color: principalColor ??
                                 Theme.of(context).colorScheme.primary,
                           ),
                     ),

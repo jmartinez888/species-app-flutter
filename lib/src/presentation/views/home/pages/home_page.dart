@@ -41,6 +41,10 @@ class HomePage extends StatelessWidget {
         itemBuilder: (context, index) {
           return CustomGridCard(
             onTap: () {},
+            backgroundColor: CustomColors.birdContainer,
+            principalColor: CustomColors.bird,
+            title: 'Title $index',
+            subtitle: 'Subtitle $index',
             image: FadeInImage(
               fit: BoxFit.cover,
               width: double.infinity,
@@ -49,8 +53,6 @@ class HomePage extends StatelessWidget {
               ),
               image: NetworkImage('https://picsum.photos/seed/$index/200/300'),
             ),
-            title: 'Title $index',
-            subtitle: 'Subtitle $index',
             actions: <Widget>[
               const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -58,7 +60,6 @@ class HomePage extends StatelessWidget {
                   RatingStars(
                     rating: 3.5,
                     color: CustomColors.bird,
-                    size: 16.0,
                   ),
                 ],
               ),
@@ -75,9 +76,6 @@ class HomePage extends StatelessWidget {
                 onPressed: () {},
               ),
             ],
-            backgroundColor: CustomColors.birdContainer,
-            borderColor: CustomColors.bird,
-            titleColor: CustomColors.bird,
           );
         },
       ),

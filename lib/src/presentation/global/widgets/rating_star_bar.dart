@@ -6,23 +6,25 @@ class RatingStars extends StatelessWidget {
     super.key,
     required this.rating,
     required this.color,
-    required this.size,
+    this.size = 16.0,
+    this.ignoreGestures = true,
   });
 
   final double rating;
   final Color color;
   final double size;
+  final bool ignoreGestures;
 
   @override
   Widget build(BuildContext context) {
     return RatingBar.builder(
-      ignoreGestures: true,
+      ignoreGestures: ignoreGestures,
       initialRating: rating,
       minRating: 1,
       direction: Axis.horizontal,
       allowHalfRating: true,
       itemCount: 5,
-      itemSize: 16,
+      itemSize: size,
       itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
       itemBuilder: (context, _) => Icon(
         Icons.star,
