@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:species/src/presentation/global/mixins/form_mixin.dart';
 import 'package:species/src/presentation/global/widgets/cards/custom_list_card.dart';
-import 'package:species/src/presentation/global/widgets/cards/custom_list_tile.dart';
-import 'package:species/src/presentation/global/widgets/drawer/custom_drawer.dart';
-import '../../global/icons/custom_icons.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -42,9 +39,17 @@ class _RegisterPageState extends State<RegisterPage> with FormMixin {
           reverse: true,
           padding: const EdgeInsets.all(16.0),
           children: [
-            const CustomListCard(
+            CustomListCard(
+              onTap: () {
+                print('object');
+              },
               image:
                   'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+              title:
+                  "Estudios Temáticos para ZEE del departamento de San Martpin - Fisiografía hola",
+              subtitle: "Roger Escobedo",
+              description:
+                  "Instituto de Investigaciones de la Amazonia Peruana",
             ),
             Center(
               child: TextButton(
