@@ -1,4 +1,3 @@
-// Material
 import 'package:flutter/material.dart';
 import 'package:species/src/presentation/global/widgets/buttons/custom_button.dart';
 import 'package:species/src/presentation/global/widgets/navigations/custom_navigation_bar.dart';

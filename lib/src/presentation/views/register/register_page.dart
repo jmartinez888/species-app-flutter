@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:species/src/presentation/global/mixins/form_mixin.dart';
-import 'package:species/src/presentation/global/widgets/cards/custom_list_tile.dart';
-import 'package:species/src/presentation/global/widgets/drawer/custom_drawer.dart';
-import '../../global/icons/custom_icons.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
