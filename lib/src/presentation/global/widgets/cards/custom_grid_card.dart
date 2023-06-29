@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 class CustomGridCard extends StatelessWidget {
   const CustomGridCard({
     Key? key,
-    required this.onTap,
+    this.onTap,
     this.title,
     this.subtitle,
-    this.actions = const <Widget>[],
+    this.actions,
     this.backgroundColor,
     this.principalColor,
-    required this.image,
+    this.image,
   }) : super(key: key);
 
-  final Widget image;
+  final Widget? image;
   final String? title;
   final Color? principalColor;
   final String? subtitle;
@@ -57,13 +57,16 @@ class CustomGridCard extends StatelessWidget {
                       title!,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                             color: principalColor ??
-                                Theme.of(context).colorScheme.primary,
+                                Theme.of(context).colorScheme.onSurface,
                           ),
                     ),
                   if (subtitle != null)
                     Text(
                       subtitle!,
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color:
+                                Theme.of(context).colorScheme.onSurfaceVariant,
+                          ),
                     ),
                   if (actions != null) const SizedBox(height: 8.0),
                   if (actions != null)
