@@ -1,33 +1,27 @@
 import "package:flutter/material.dart";
 
 class CustomNavigationBar extends StatefulWidget {
-  // ignore: non_constant_identifier_names
-  //final Function Currentindex;
-  // ignore: non_constant_identifier_names
-
   const CustomNavigationBar({
     super.key,
   });
-
   @override
   State<CustomNavigationBar> createState() => _CustomNavigationBarState();
 }
 
-// ignore: camel_case_types
 class _CustomNavigationBarState extends State<CustomNavigationBar> {
-  int paginacion = 0;
+  int indexPage = 0;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(16),
       child: ClipRRect(
         borderRadius: const BorderRadius.all(Radius.circular(100.0)),
         child: NavigationBar(
-            selectedIndex: paginacion,
+            selectedIndex: indexPage,
             onDestinationSelected: (int index) {
               setState(() {
-                paginacion = index;
+                indexPage = index;
               });
             },
             destinations: const [
