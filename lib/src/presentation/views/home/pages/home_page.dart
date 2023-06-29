@@ -32,10 +32,10 @@ class HomePage extends StatelessWidget {
               : isTablet(context)
                   ? 4
                   : isDesktop(context)
-                      ? 7
+                      ? 5
                       : 2,
         ),
-        itemCount: 8,
+        itemCount: 20,
         mainAxisSpacing: 8.0,
         crossAxisSpacing: 8.0,
         itemBuilder: (context, index) {
@@ -52,10 +52,15 @@ class HomePage extends StatelessWidget {
             title: 'Title $index',
             subtitle: 'Subtitle $index',
             actions: <Widget>[
-              const RatingStars(
-                rating: 3.5,
-                color: CustomColors.bird,
-                size: 16.0,
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  RatingStars(
+                    rating: 3.5,
+                    color: CustomColors.bird,
+                    size: 16.0,
+                  ),
+                ],
               ),
               CustomIconButtom(
                 icon: Icons.playlist_add,

@@ -16,6 +16,7 @@ class RatingStars extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RatingBar.builder(
+      ignoreGestures: true,
       initialRating: rating,
       minRating: 1,
       direction: Axis.horizontal,
