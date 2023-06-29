@@ -15,8 +15,7 @@ Widget customButton({
     ),
     child: Text(
       text,
-      style: const TextStyle(
-      ),
+      style: const TextStyle(),
     ),
   );
 }
