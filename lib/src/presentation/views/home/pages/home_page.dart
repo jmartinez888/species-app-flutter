@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/widgets/buttons/custom_button.dart';
 import 'package:species/src/presentation/global/widgets/navigations/custom_navigation_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,10 +10,8 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Home'),
         ),
-        body: Container(
-          child: const Center(
-            child: Text('Home Page'),
-          ),
+        body: const Center(
+          child: Text('Home Page'),
         ),
         bottomNavigationBar: const CustomNavigationBar());
   }
