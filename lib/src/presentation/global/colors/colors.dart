@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomColors {
-
   CustomColors._();
-  
+
   static const primary = Color(0xFF348A29);
   static const primaryContainer = Color(0xFFE8F5E9);
   static const primaryOnContainer = Color(0xFF165C0F);
