@@ -42,8 +42,12 @@ class CustomTheme {
     ),
     iconTheme: const IconThemeData(color: CustomColors.greyOnContainer),
     appBarTheme: const AppBarTheme(
-      foregroundColor: CustomColors.greyOnContainer,
+      //foregroundColor: CustomColors.background,
       surfaceTintColor: Colors.transparent,
+    ),
+    bottomSheetTheme: const BottomSheetThemeData(
+      surfaceTintColor: Colors.transparent,
+      clipBehavior: Clip.antiAlias,
     ),
     inputDecorationTheme: InputDecorationTheme(
       border: OutlineInputBorder(
