@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:species/src/presentation/global/mixins/form_mixin.dart';
-import 'package:species/src/presentation/global/widgets/alerts/customBottomSheet.dart';
-import 'package:species/src/presentation/global/widgets/alerts/customShowModal.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -172,6 +170,6 @@ class _RegisterPageState extends State<RegisterPage> with FormMixin {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Processing Data')),
       );
-    } else {}
+    }
   }
 }
