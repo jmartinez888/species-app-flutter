@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.lightTheme,
       routes: routes,
-      initialRoute: Routes.register,
+      initialRoute: Routes.fauna,
     );
   }
 }
