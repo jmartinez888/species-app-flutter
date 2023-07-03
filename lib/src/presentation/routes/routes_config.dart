@@ -6,4 +6,5 @@ class Routes {
   static const String fauna = '/fauna';
   static const String login = '/login';
   static const String register = '/register';
+  static const String speciesDetail = '/species-detail';
 }

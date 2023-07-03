@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/widgets/buttons/custom_button.dart';
+import 'package:species/src/presentation/global/colors/colors.dart';
 import 'package:species/src/presentation/global/widgets/navigations/custom_navigation_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,9 +11,13 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Home'),
         ),
-        body: Container(
-          child: const Center(
-            child: Text('Home Page'),
+        body: Center(
+          child: MaterialButton(
+            color: CustomColors.birdContainer,
+            onPressed: () {
+              Navigator.pushNamed(context, '/species-detail');
+            },
+            child: const Text('Species Details Page'),
           ),
         ),
         bottomNavigationBar: const CustomNavigationBar());
