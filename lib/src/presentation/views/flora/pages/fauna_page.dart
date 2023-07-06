@@ -10,27 +10,26 @@ class FaunaPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Fauna'),
         ),
-        body: CustomExpansionCard(
-          title: "Clasificacion Taxonomica",
+        body: Column(
           children: [
-            ListTile(
-              tileColor: Colors.white,
-              title: const Text("Reino"),
-              subtitle: const Text(
-                "Animal",
-                textDirection: TextDirection.rtl,
+            CustomExpansionCard(title: "Hola", children: [
+              ListTile(
+                title: const Text("Reino"),
+                subtitle: const Text(
+                  "Animal",
+                  textDirection: TextDirection.rtl,
+                ),
+                onTap: () {},
               ),
-              onTap: () {},
-            ),
-            ListTile(
-              tileColor: Colors.white,
-              title: const Text("Phylum"),
-              subtitle: const Text(
-                "Chordata",
-                textDirection: TextDirection.rtl,
-              ),
-              onTap: () {},
-            )
+              ListTile(
+                title: const Text("Reino"),
+                subtitle: const Text(
+                  "Animal",
+                  textDirection: TextDirection.rtl,
+                ),
+                onTap: () {},
+              )
+            ])
           ],
         ));
   }
