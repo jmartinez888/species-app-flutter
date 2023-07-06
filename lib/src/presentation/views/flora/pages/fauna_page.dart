@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:species/src/presentation/global/widgets/cards/custom_expansion_card.dart';
+
+import '../../../global/widgets/cards/custom_expansion_tile.dart';
 
 class FaunaPage extends StatelessWidget {
   const FaunaPage({super.key});
@@ -12,24 +13,23 @@ class FaunaPage extends StatelessWidget {
         ),
         body: Column(
           children: [
-            CustomExpansionCard(title: "Hola", children: [
-              ListTile(
-                title: const Text("Reino"),
-                subtitle: const Text(
-                  "Animal",
-                  textDirection: TextDirection.rtl,
+            CustomExpansionTile(
+              title:
+                  'Holasdadasdasdassdasdasdasdasfdsfasdfsdfasdfsadgdsgsdgsagsdgsdgsd',
+              color: Theme.of(context).colorScheme.secondary,
+              child: ListView.separated(
+                shrinkWrap: true,
+                itemBuilder: (BuildContext context, int index) =>
+                    const ListTile(
+                  title: Text('data'),
                 ),
-                onTap: () {},
+                separatorBuilder: (BuildContext context, int index) =>
+                    const Divider(
+                  color: Colors.grey,
+                ),
+                itemCount: 5,
               ),
-              ListTile(
-                title: const Text("Reino"),
-                subtitle: const Text(
-                  "Animal",
-                  textDirection: TextDirection.rtl,
-                ),
-                onTap: () {},
-              )
-            ])
+            ),
           ],
         ));
   }
