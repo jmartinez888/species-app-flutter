@@ -3,9 +3,15 @@ import 'package:flutter/material.dart';
 class CustomExpansionTile extends StatefulWidget {
   final String? title;
   final Widget? child;
-  final Color? color;
-  const CustomExpansionTile(
-      {super.key, this.title, required this.child, this.color});
+  final Color? background;
+  final Color? border;
+  const CustomExpansionTile({
+    super.key,
+    this.title,
+    required this.child,
+    this.background,
+    this.border,
+  });
 
   @override
   State<CustomExpansionTile> createState() => _CustomExpansionTileState();
@@ -48,63 +54,73 @@ class _CustomExpansionTileState extends State<CustomExpansionTile>
   @override
   Widget build(BuildContext context) {
     final bool closed = !_isExpanded && _controller.isDismissed;
-    return AnimatedBuilder(
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16.0),
+        border: Border.all(
+          width: 1,
+          color: widget.border ?? Colors.transparent,
+        ),
+      ),
+      child: AnimatedBuilder(
         animation: _controller.view,
         builder: (context, child) {
-          return Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                      color: Theme.of(context).colorScheme.secondary,
-                      width: 1.0)),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  Material(
-                    borderRadius: BorderRadius.circular(16),
-                    color: widget.color,
-                    child: InkWell(
-                        borderRadius: BorderRadius.circular(16),
-                        onTap: _toggleExpansion,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 16.0, vertical: 8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Expanded(
-                                child: Text(widget.title ?? '',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .titleMedium
-                                        ?.copyWith(
-                                            color: Theme.of(context)
-                                                .colorScheme
-                                                .onPrimary)),
-                              ),
-                              RotationTransition(
-                                turns: _iconTurns,
-                                child: const Icon(Icons.expand_more),
-                              )
-                            ],
+          return Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Material(
+                borderRadius: BorderRadius.circular(16.0),
+                color:
+                    widget.background ?? Theme.of(context).colorScheme.primary,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(16.0),
+                  onTap: _toggleExpansion,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16.0,
+                      vertical: 8.0,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            widget.title ?? '',
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 1,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleMedium
+                                ?.copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.onPrimary,
+                                ),
                           ),
-                        )),
-                  ),
-                  ClipRect(
-                    child: Align(
-                      heightFactor: _easeInAnimation.value,
-                      child: child,
+                        ),
+                        const SizedBox(width: 8.0),
+                        RotationTransition(
+                          turns: _iconTurns,
+                          child: Icon(
+                            Icons.expand_more,
+                            color: Theme.of(context).colorScheme.onPrimary,
+                          ),
+                        )
+                      ],
                     ),
                   ),
-                ],
+                ),
               ),
-            ),
+              ClipRect(
+                child: Align(
+                  heightFactor: _easeInAnimation.value,
+                  child: child,
+                ),
+              ),
+            ],
           );
         },
-        child: closed ? null : widget.child);
+        child: closed ? null : widget.child,
+      ),
+    );
   }
 }
