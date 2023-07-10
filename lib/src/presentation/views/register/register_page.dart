@@ -170,6 +170,6 @@ class _RegisterPageState extends State<RegisterPage> with FormMixin {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Processing Data')),
       );
-    }
+    } else {}
   }
 }
