@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700178322429",
+    "project_id": "species-iiap",
+    "storage_bucket": "species-iiap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700178322429:android:abb59f5248ac72d39d3f94",
+        "android_client_info": {
+          "package_name": "pe.gob.iiap.species"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700178322429-qluansb29vabef2nv6b36lgalp1panfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjF9-DuU0-f0-MbOKgbBDcjQ5ofyOS4aE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700178322429-qluansb29vabef2nv6b36lgalp1panfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
